@@ -7,7 +7,7 @@ repository = "https://github.com/Lokathor/bytemuck"
 readme = "README.md"
 keywords = ["transmute", "bytes", "casting"]
 categories = ["encoding", "no-std"]
-edition = "2018"
+edition = "2021"
 license = "Zlib OR Apache-2.0 OR MIT"
 exclude = ["/pedantic.bat"]
 
@@ -31,7 +31,7 @@ nightly_portable_simd = []
 nightly_stdsimd = []
 
 [dependencies]
-bytemuck_derive = { version = "1.4", path = "derive", optional = true }
+bytemuck_derive = { version = "1", path = "derive", optional = true }
 
 [package.metadata.docs.rs]
 # Note(Lokathor): Don't use all-features or it would use `unsound_ptr_pod_impl` too.
